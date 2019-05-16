@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="C_MAIN">#dd3875f0</color>
+    <color name="activity_back_color">#f5f5f5</color>
+    <color name="C_33">#333333</color>
+    <color name="C_66">#666666</color>
+    <color name="C_99">#999999</color>
+    <color name="C_white">#ffffff</color>
+    <color name="C_black">#000000</color>
+
+
+
+</resources>

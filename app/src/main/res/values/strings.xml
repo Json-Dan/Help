@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Help</string>
+    <string name="team_lock">团队锁</string>
+    <string name="team_lock_hint">开启后，其他人将无法注册加入您的检修团队</string>
+
+    <string name="service_group">维修组</string>
+    <string name="person">人员</string>
+    <string name="invite">+邀请</string>
+    <string name="admin">管理</string>
+</resources>
