@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".OneListActivity"
+    tools:ignore="MissingConstraints">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DP_40"
+        android:background="@color/C_white"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:layout_width="@dimen/DP_20"
+            android:layout_height="@dimen/DP_20"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:text="@string/team_lock"
+            android:textColor="@color/C_33"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_lock"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DP_10"
+            app:layout_constraintBottom_toBottomOf="@id/iv_lock"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_lock" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_lock_hint"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DP_30"
+        android:layout_marginLeft="@dimen/DP_10"
+        android:gravity="center"
+        android:text="@string/team_lock_hint"
+        android:textColor="@color/C_99"
+        android:textSize="@dimen/DP_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DP_45"
+        android:background="@color/C_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lock_hint">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_service_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/C_MAIN"
+                android:textSize="@dimen/SP_14"
+                app:layout_constraintBottom_toTopOf="@id/tv_service_group_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_service_group_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_group"
+                android:textSize="@dimen/SP_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_service_group" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="@dimen/DP_2"
+            android:layout_height="@dimen/DP_25"
+            android:background="@color/C_99" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/C_MAIN"
+                android:textSize="@dimen/SP_14"
+                app:layout_constraintBottom_toTopOf="@id/tv_person_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_invite"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_person_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person"
+                android:textSize="@dimen/SP_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv_person"
+                app:layout_constraintRight_toRightOf="@id/tv_person"
+                app:layout_constraintTop_toBottomOf="@id/tv_person" />
+
+
+            <TextView
+                android:id="@+id/tv_invite"
+                android:layout_width="@dimen/DP_40"
+                android:layout_height="@dimen/DP_25"
+                android:layout_marginRight="@dimen/DP_10"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:text="@string/invite"
+                android:textColor="@color/C_MAIN"
+                android:textSize="@dimen/SP_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="@dimen/DP_2"
+            android:layout_height="@dimen/DP_25"
+            android:background="@color/C_99" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/tv_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/admin"
+                android:textColor="@color/C_MAIN"
+                android:textSize="@dimen/SP_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/iv_next"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DP_10"
+                android:src="@drawable/ic_chevron_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_1"></android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

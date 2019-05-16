@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/C_white"
+    android:orientation="horizontal">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="@dimen/DP_250"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_30"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:layout_marginTop="@dimen/DP_30"
+            android:gravity="center_vertical"
+            android:text="开始时间"
+            android:textColor="@color/C_33"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <TextView
+            android:id="@+id/tv_selector_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_25"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:background="@color/C_MAIN"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/DP_5"
+            android:paddingRight="@dimen/DP_5"
+            android:text="2019年12月45日"
+            android:textColor="@color/C_33"
+            android:textSize="@dimen/SP_12"
+            app:layout_constraintBottom_toBottomOf="@id/tv_start_date"
+            app:layout_constraintLeft_toRightOf="@id/tv_start_date"
+            app:layout_constraintTop_toTopOf="@id/tv_start_date" />
+
+        <TextView
+            android:id="@+id/tv_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_30"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:layout_marginTop="@dimen/DP_10"
+            android:gravity="center_vertical"
+            android:text="结束时间"
+            android:textColor="@color/C_33"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_start_date" />
+
+        <TextView
+            android:id="@+id/tv_selector_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_25"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:background="@color/C_MAIN"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/DP_5"
+            android:paddingRight="@dimen/DP_5"
+            android:text="2019年12月45日"
+            android:textColor="@color/C_33"
+            android:textSize="@dimen/SP_12"
+            app:layout_constraintBottom_toBottomOf="@id/tv_end_date"
+            app:layout_constraintLeft_toRightOf="@id/tv_start_date"
+            app:layout_constraintTop_toTopOf="@id/tv_end_date" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_30"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:gravity="center_vertical"
+            android:text="时间"
+            android:textColor="@color/C_33"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/DP_5"
+            android:background="@color/C_99"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_end_date" />
+
+
+        <TextView
+            android:id="@+id/tv_title_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_30"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:layout_marginTop="@dimen/DP_10"
+            android:gravity="center_vertical"
+            android:text="排序"
+            android:textColor="@color/C_33"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_end_date" />
+
+
+        <TextView
+            android:id="@+id/tv_selector_sort"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DP_40"
+            android:layout_marginRight="@dimen/DP_10"
+            android:background="@drawable/selector_bg"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+            android:gravity="center_vertical|right"
+            android:text="2019年12月45日"
+            android:textColor="@color/C_33"
+            android:textSize="@dimen/SP_14"
+            app:layout_constraintLeft_toLeftOf="@id/tv_title_sort"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_sort" />
+
+        <TextView
+            android:id="@+id/tv_title_status"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_30"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:layout_marginTop="@dimen/DP_10"
+            android:gravity="center_vertical"
+            android:text="状态"
+            android:textColor="@color/C_33"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_selector_sort" />
+
+
+        <TextView
+            android:id="@+id/tv_selector_status"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DP_40"
+            android:layout_marginRight="@dimen/DP_10"
+            android:background="@drawable/selector_bg"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+            android:gravity="center_vertical|right"
+            android:text="2019年12月45日"
+            android:textColor="@color/C_33"
+            android:textSize="@dimen/SP_14"
+            app:layout_constraintLeft_toLeftOf="@id/tv_title_status"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_status" />
+
+        <TextView
+            android:id="@+id/tv_title_bm"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_30"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:layout_marginTop="@dimen/DP_10"
+            android:gravity="center_vertical"
+            android:text="上报部门"
+            android:textColor="@color/C_33"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_selector_status" />
+
+
+        <TextView
+            android:id="@+id/tv_selector_bm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DP_40"
+            android:layout_marginRight="@dimen/DP_10"
+            android:background="@drawable/selector_bg"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+            android:gravity="center_vertical|right"
+            android:text="2019年12月45日"
+            android:textColor="@color/C_33"
+            android:textSize="@dimen/SP_14"
+            app:layout_constraintLeft_toLeftOf="@id/tv_title_bm"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_bm" />
+
+
+        <TextView
+            android:id="@+id/tv_title_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DP_30"
+            android:layout_marginLeft="@dimen/DP_10"
+            android:layout_marginTop="@dimen/DP_10"
+            android:gravity="center_vertical"
+            android:text="维修班组"
+            android:textColor="@color/C_33"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_selector_bm" />
+
+
+        <TextView
+            android:id="@+id/tv_selector_wx"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DP_40"
+            android:layout_marginRight="@dimen/DP_10"
+            android:background="@drawable/selector_bg"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+            android:gravity="center_vertical|right"
+            android:text="2019年12月45日"
+            android:textColor="@color/C_33"
+            android:textSize="@dimen/SP_14"
+            app:layout_constraintLeft_toLeftOf="@id/tv_title_wx"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_wx" />
+
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DP_40"
+            android:background="@color/C_99"
+            android:gravity="center"
+            android:text="重置"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_finish" />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DP_40"
+            android:background="@color/C_MAIN"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/C_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_reset"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
